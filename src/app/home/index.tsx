@@ -1,0 +1,25 @@
+import { Link } from 'expo-router';
+import { View, Text } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
+
+const HomeScreen = () => {
+  return (
+    <SafeAreaView>
+      <View>
+        <Text className="font-montserrat-black text-3xl">HomeScreen</Text>
+
+        <Link className="mb-2" href="/products">
+          Productos
+        </Link>
+        <Link className="mb-2" href="/profile">
+          Perfiles
+        </Link>
+        <Link className="mb-2" href="/settings">
+          Configuración
+        </Link>
+      </View>
+    </SafeAreaView>
+  );
+};
+
+export default HomeScreen;

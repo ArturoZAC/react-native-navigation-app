@@ -3,7 +3,7 @@ import { useFonts } from 'expo-font';
 import { Slot, SplashScreen } from 'expo-router';
 
 import './global.css';
-import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
+import { SafeAreaProvider /* , SafeAreaView  */ } from 'react-native-safe-area-context';
 
 SplashScreen.preventAutoHideAsync();
 
@@ -24,9 +24,9 @@ const RootLayout = () => {
 
   return (
     <SafeAreaProvider>
-      <SafeAreaView>
-        <Slot />
-      </SafeAreaView>
+      {/* <SafeAreaView> */}
+      <Slot />
+      {/* </SafeAreaView> */}
     </SafeAreaProvider>
   );
 };
