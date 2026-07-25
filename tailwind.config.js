@@ -5,7 +5,13 @@ module.exports = {
 
   presets: [require('nativewind/preset')],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'montserrat-black': ['Montserrat-Black', 'sans-serif'],
+        'montserrat-medium': ['Montserrat-Medium', 'sans-serif'],
+        'montserrat-light': ['Montserrat-Light', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
 };
