@@ -6,6 +6,15 @@ module.exports = {
   presets: [require('nativewind/preset')],
   theme: {
     extend: {
+      colors: {
+        primary: '#49129C',
+        secondary: {
+          default: '#B40086',
+          100: '#C51297',
+          200: '#831266',
+        },
+        tertiary: '#EF2967',
+      },
       fontFamily: {
         'montserrat-black': ['Montserrat-Black', 'sans-serif'],
         'montserrat-medium': ['Montserrat-Medium', 'sans-serif'],
