@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { useFonts } from 'expo-font';
-import { Slot, SplashScreen, Stack } from 'expo-router';
+import { Slot, SplashScreen /* Stack  */ } from 'expo-router';
 
 import './global.css';
 import { SafeAreaProvider /* , SafeAreaView  */ } from 'react-native-safe-area-context';
