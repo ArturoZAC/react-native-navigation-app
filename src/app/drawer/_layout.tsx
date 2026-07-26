@@ -7,6 +7,7 @@ const DrawerLayout = () => {
     <Drawer
       drawerContent={CustomDrawer}
       screenOptions={{
+        headerShown: false,
         overlayColor: 'rgba(0,0,0,0.4)',
         drawerActiveTintColor: 'purple',
         headerShadowVisible: false,
@@ -21,6 +22,16 @@ const DrawerLayout = () => {
           title: 'User Screen',
           drawerIcon: ({ color, size }) => (
             <Ionicons name="person-circle-outline" color={color} size={size} />
+          ),
+        }}
+      />
+      <Drawer.Screen
+        name="tabs"
+        options={{
+          drawerLabel: 'Tabs + Stack',
+          title: 'Tabs + Stack',
+          drawerIcon: ({ color, size }) => (
+            <Ionicons name="albums-outline" color={color} size={size} />
           ),
         }}
       />
