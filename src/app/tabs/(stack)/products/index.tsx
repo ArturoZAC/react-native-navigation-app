@@ -20,7 +20,9 @@ const ProductsScreen = () => {
 
             <View className="mt-2 flex flex-row items-center justify-between">
               <Text className="font-montserrat-black text-lg">${item.price}</Text>
-              <Link href={`/products/${item.id}`}
+              <Link
+                href={`/tabs/(stack)/products/${item.id}`}
+                // <Link href={`/products/${item.id}`}
                 className="font-montserrat-medium text-blue-500">
                 Ver detalles
               </Link>
