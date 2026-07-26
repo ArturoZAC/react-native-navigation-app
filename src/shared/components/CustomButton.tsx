@@ -40,7 +40,7 @@ const CustomButton = ({
       className={`rounded-md p-3 ${btnColor} active:opacity-90 ${className}`}
       onPress={onPress}
       onLongPress={onLongPress}>
-      <Text className="font-montserrat-black text-center text-white">{children}</Text>
+      <Text className="text-center font-montserrat-black text-white">{children}</Text>
     </Pressable>
   );
 };
