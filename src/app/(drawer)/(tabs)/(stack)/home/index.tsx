@@ -1,8 +1,15 @@
 import CustomButton from '@/src/shared/components/CustomButton';
-import { Link, router } from 'expo-router';
+import { Link, router, useNavigation } from 'expo-router';
+import { DrawerActions } from 'expo-router/build/react-navigation';
 import { View /* Text */ } from 'react-native';
 
 const HomeScreen = () => {
+  const navigation = useNavigation();
+
+  const onToggleDrawer = () => {
+    navigation.dispatch(() => DrawerActions.toggleDrawer());
+  };
+
   return (
     // <View>
     <View className="p-10">
@@ -23,6 +30,8 @@ const HomeScreen = () => {
           Productos
         </CustomButton>
       </Link>
+
+      <CustomButton onPress={onToggleDrawer}>Abrir Menu</CustomButton>
     </View>
     // </View>
   );
