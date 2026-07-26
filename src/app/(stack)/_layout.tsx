@@ -8,6 +8,9 @@ const StackLayout = () => {
         contentStyle: {
           backgroundColor: 'white',
         },
+        headerTitleStyle: {
+          fontFamily: 'Montserrat-Black',
+        },
       }}>
       <Stack.Screen
         name="home/index"
@@ -34,6 +37,13 @@ const StackLayout = () => {
         name="settings/index"
         options={{
           title: 'Settings Screen',
+        }}
+      />
+
+      <Stack.Screen
+        name="products/[id]/index"
+        options={{
+          title: 'Product Detail',
         }}
       />
     </Stack>
