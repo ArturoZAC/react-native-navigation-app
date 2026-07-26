@@ -5,6 +5,7 @@ const TabsLayout = () => {
   return (
     <Tabs
       screenOptions={{
+        headerShown: false,
         tabBarActiveTintColor: 'purple',
         headerTitleStyle: {
           fontFamily: 'Montserrat-Black',
