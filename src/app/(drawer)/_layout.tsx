@@ -16,22 +16,22 @@ const DrawerLayout = () => {
         },
       }}>
       <Drawer.Screen
+        name="(tabs)"
+        options={{
+          drawerLabel: 'Tabs + Stack',
+          title: 'Tabs + Stack',
+          drawerIcon: ({ color, size }) => (
+            <Ionicons name="albums-outline" color={color} size={size} />
+          ),
+        }}
+      />
+      <Drawer.Screen
         name="user/index"
         options={{
           drawerLabel: 'User Screen',
           title: 'User Screen',
           drawerIcon: ({ color, size }) => (
             <Ionicons name="person-circle-outline" color={color} size={size} />
-          ),
-        }}
-      />
-      <Drawer.Screen
-        name="tabs"
-        options={{
-          drawerLabel: 'Tabs + Stack',
-          title: 'Tabs + Stack',
-          drawerIcon: ({ color, size }) => (
-            <Ionicons name="albums-outline" color={color} size={size} />
           ),
         }}
       />
